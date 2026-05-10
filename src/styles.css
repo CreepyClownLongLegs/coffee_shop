@@ -1,0 +1,14 @@
+/* ── Scroll-triggered fade animations ── */
+.fade-on-scroll {
+  opacity: 0;
+  transition: opacity 0.75s ease, transform 0.75s ease;
+}
+
+.fade-on-scroll.fade-up    { transform: translateY(40px); }
+.fade-on-scroll.fade-left  { transform: translateX(-40px); }
+.fade-on-scroll.fade-right { transform: translateX(40px); }
+
+.fade-on-scroll.fade-visible {
+  opacity: 1;
+  transform: none;
+}

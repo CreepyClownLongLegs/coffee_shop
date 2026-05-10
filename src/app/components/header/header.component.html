@@ -1,0 +1,43 @@
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<header>
+  <nav class="navbar navbar-expand-lg fixed-top cafe-nav">
+    <div class="container-fluid px-4">
+
+      <a class="navbar-brand cafe-brand" routerLink="/">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 38" width="34" height="28" fill="none" aria-hidden="true">
+          <path d="M14 9 Q16 5.5 14 2" stroke="#001f1f" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M22 9 Q24 5.5 22 2" stroke="#001f1f" stroke-width="1.6" stroke-linecap="round"/>
+          <rect x="5" y="11" width="24" height="16" rx="2" stroke="#001f1f" stroke-width="1.8"/>
+          <line x1="3" y1="27" x2="31" y2="27" stroke="#001f1f" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M29 15 Q38 15 38 19 Q38 23 29 23" stroke="#001f1f" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-name">Cafe</span>
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarMain"
+        aria-controls="navbarMain"
+        aria-expanded="false"
+        aria-label="Navigation öffnen">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link cafe-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a></li>
+          <li class="nav-item"><a class="nav-link cafe-link" routerLink="/speisekarte" routerLinkActive="active">Speisekarte</a></li>
+          <li class="nav-item"><a class="nav-link cafe-link" routerLink="/galerie" routerLinkActive="active">Galerie</a></li>
+          <li class="nav-item"><a class="nav-link cafe-link" routerLink="/überuns" routerLinkActive="active">Über uns</a></li>
+          <li class="nav-item"><a class="nav-link cafe-link" routerLink="/kontakt" routerLinkActive="active">Kontakt</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+

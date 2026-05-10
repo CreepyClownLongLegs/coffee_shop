@@ -1,0 +1,73 @@
+<section class="masthead">
+  <div class="hero-content">
+    <div class="hero-inner">
+      <div class="hero-title-row">
+        <div class="hero-mug-wrap">
+          <svg class="hero-mug" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 58" width="58" height="66" fill="none" aria-hidden="true">
+            <path d="M17 13 Q19 8 17 3" stroke="#f8f4ef" stroke-width="2" stroke-linecap="round"/>
+            <path d="M27 13 Q29 8 27 3" stroke="#f8f4ef" stroke-width="2" stroke-linecap="round"/>
+            <rect x="5" y="15" width="28" height="21" rx="3" stroke="#f8f4ef" stroke-width="2.2"/>
+            <line x1="2" y1="36" x2="36" y2="36" stroke="#f8f4ef" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M33 19 Q47 19 47 26 Q47 33 33 33" stroke="#f8f4ef" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h1 class="hero-title">Dein Café</h1>
+      </div>
+      <p class="hero-subtitle">Wo jeder Schluck eine Geschichte erzählt.</p>
+    </div>
+  </div>
+  <app-scroll-button></app-scroll-button>
+</section>
+
+<div class="sections-wrapper">
+
+  <div class="section-pair">
+    <div [appFadeIn]="'left'" class="section-content section-content--light">
+      <p class="section-label">Speisekarte</p>
+      <h2 class="section-title">Kulinarische Vielfalt entdecken!</h2>
+      <p class="section-body">Entdecken Sie unsere Köstlichkeiten! Klicken Sie hier, um unsere vielfältige Auswahl an leckeren Speisen zu erkunden. Ob Sie nach etwas Bestimmtem suchen oder sich überraschen lassen möchten – wir haben für jeden Geschmack etwas dabei. Lassen Sie sich verwöhnen und entdecken Sie eine Welt voller Genüsse!</p>
+      <a routerLink="/speisekarte" class="cafe-btn cafe-btn-dark">Speisekarte</a>
+    </div>
+    <div [appFadeIn]="'right'" class="section-img" style="background-image: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80')"></div>
+  </div>
+
+  <div class="section-pair">
+    <div [appFadeIn]="'left'" class="section-img d-none d-lg-block" style="background-image: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80')"></div>
+    <div [appFadeIn]="'right'" class="section-content section-content--dark">
+      <p class="section-label">Kontakt</p>
+      <h2 class="section-title">Ein Ort für ein unvergessliches Erlebnis!</h2>
+      <p class="section-body">Kontaktieren Sie uns und reservieren Sie Ihren Platz! Klicken Sie hier, um mit uns in Verbindung zu treten und Ihren Tisch zu reservieren. Wir freuen uns darauf, Ihnen einen unvergesslichen Aufenthalt zu bereiten und stehen Ihnen gerne für alle Fragen und Anliegen zur Verfügung.</p>
+      <a routerLink="/kontakt" class="cafe-btn cafe-btn-light">Kontakt</a>
+    </div>
+  </div>
+
+</div>
+
+  <!--the quote-->
+
+  <section [appFadeIn]="'up'" class="quote-section">
+    <div class="quote-container">
+      <span class="quote-typewriter">{{ displayedQuote }}</span>
+    </div>
+    <p class="quote-author">— Karen Blixen</p>
+  </section>
+
+
+    <!-- links -->
+  <app-gallery-links></app-gallery-links>
+
+  <!--recommendation-->
+
+  <div class="rec-wrapper">
+    <div class="rec-section">
+      <div [appFadeIn]="'left'" class="rec-img" style="background-image: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80')"></div>
+      <div [appFadeIn]="'up'" [fadeDelay]="150" class="rec-content">
+        <p class="rec-label">Unsere Empfehlung</p>
+        <h2 class="rec-title">Wiener Frühstück</h2>
+        <p class="rec-body">Genießen Sie das ultimative Wiener Frühstückserlebnis mit unserem klassischen Wiener Frühstück und einer Tasse unseres aromatischen Kaffees.</p>
+        <p class="rec-price">€ 8,90</p>
+      </div>
+      <div [appFadeIn]="'right'" [fadeDelay]="100" class="rec-img" style="background-image: url('https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&q=80')"></div>
+    </div>
+  </div>
+

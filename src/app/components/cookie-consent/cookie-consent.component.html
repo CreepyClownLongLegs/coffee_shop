@@ -1,0 +1,16 @@
+<div class="cookie-bar" *ngIf="visible" role="dialog" aria-label="Cookie-Einwilligung">
+  <div class="cookie-inner">
+    <div class="cookie-text">
+      <p class="cookie-title">Cookies &amp; Datenschutz</p>
+      <p class="cookie-body">
+        Wir verwenden Cookies, um Ihnen das beste Erlebnis auf unserer Website zu bieten.
+        Weitere Informationen finden Sie in unserer
+        <a [routerLink]="['/datenschutz']" class="cookie-link">Datenschutzerklärung</a>.
+      </p>
+    </div>
+    <div class="cookie-actions">
+      <button class="cookie-btn cookie-btn--reject" (click)="reject()">Ablehnen</button>
+      <button class="cookie-btn cookie-btn--accept" (click)="accept()">Akzeptieren</button>
+    </div>
+  </div>
+</div>
